@@ -9,8 +9,8 @@ sys.path.append(os.path.dirname(cwd))
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 
-from fpj.lda.corpus import Corpus
-from fpj.lda.lda import LDA
+from lda.lda.corpus import Corpus
+from lda.lda.lda import LDA
 
 menu_path = cwd + '/input/reuters-21578/'
 
@@ -84,8 +84,3 @@ if __name__ == '__main__':
     model.load_model(filepath='save/reuters-21578/')
 
     linear_classifier(model, corpus)
-
-
-
-
-

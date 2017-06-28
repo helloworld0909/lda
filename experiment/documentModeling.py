@@ -6,8 +6,8 @@ cwd = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(cwd)
 sys.path.append(os.path.dirname(cwd))
 
-from fpj.lda.corpus import Corpus
-from fpj.lda.lda import LDA
+from lda.corpus import Corpus
+from lda.lda import LDA
 
 menu_path = cwd + '/input/reuters/'
 
@@ -47,4 +47,3 @@ def main():
 if __name__ == '__main__':
     fit_reuters()
     output_reuters()
-
